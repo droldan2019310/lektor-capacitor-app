@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>¿Deseas salir de sesión?</h2>
+<mat-dialog-content class="mat-typography">
+    <mat-form-field class="col-lg-12" appearance="fill">
+        <mat-label>Ingrese la clave para salir de sesión</mat-label>
+        <input matInput  [(ngModel)]="clave">
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-button (click)="validateFields()" cdkFocusInitial>Salir Sesión</button>
+</mat-dialog-actions>

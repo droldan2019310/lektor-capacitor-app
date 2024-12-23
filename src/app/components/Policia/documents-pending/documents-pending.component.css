@@ -1,0 +1,54 @@
+.container{
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+}
+
+
+
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+
+
+  .mat-elevation-z8{
+      overflow-x:auto
+  }
+
+
+  
+
+  
+  
+mat-row{
+    cursor: pointer;
+    padding: 1rem;
+}
+  
+mat-row:hover {
+    background: #f5f5f5;
+}
+  
+
+table td, table th{
+    padding: 1rem !important;
+}
+    
+tr:hover{
+    cursor: pointer;
+}
+
+

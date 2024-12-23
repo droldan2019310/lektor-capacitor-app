@@ -1,0 +1,28 @@
+<section>
+    <div class="container">
+        <div class="wrapper fadeInDown mt-5">
+            <div id="formContent" class="pt-3">
+              <!-- Tabs Titles -->
+          
+              <!-- Icon -->
+              <div class="fadeIn first">
+                <img src="../../../../assets/lektor.png" id="icon" alt="User Icon" />
+                <h1>Ingresa Sesión</h1>
+              </div>
+          
+              <!-- Login Form -->
+              <form #form="ngForm" (ngSubmit)="login(form)">
+                <input type="text" id="userName" #userName="ngModel" [(ngModel)]="user.userName" class="fadeIn second" name="userName" placeholder="username">
+                <input type="password" id="password" #password="ngModel" [(ngModel)]="user.password" class="fadeIn third" name="password" placeholder="password">
+                <input type="submit" class="fadeIn fourth m-2" value="Log In">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover">Lektor GT- servicio de seguridad</a>
+              </div>
+          
+            </div>
+        </div>
+    </div>
+</section>

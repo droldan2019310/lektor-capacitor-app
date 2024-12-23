@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">lektor-front</string>
+    <string name="title_activity_main">lektor-front</string>
+    <string name="package_name">com.lektorgt</string>
+    <string name="custom_url_scheme">com.lektorgt</string>
+</resources>

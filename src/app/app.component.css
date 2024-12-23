@@ -1,0 +1,18 @@
+
+.mat-sidenav{
+    min-width: 10rem;
+}
+
+mat-toolbar{
+    background-color: #3f51b5 !important;
+}
+
+
+a, i, h1, span{
+    color: white !important;
+}
+
+.mat-toolbar{
+    position: fixed;
+    z-index: 90;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "LektorFront",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

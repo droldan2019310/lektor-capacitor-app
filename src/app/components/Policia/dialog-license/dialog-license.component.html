@@ -1,0 +1,101 @@
+<h2 mat-dialog-title>Documento Escaneado</h2>
+<mat-dialog-content class="mat-typography">
+    <span>Revisa que todos los datos Esten correctos</span>
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Documento de Identificación</mat-label>
+        <input matInput [(ngModel)]="data.result.documentNumber" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Nombre</mat-label>
+        <input matInput  [(ngModel)]="data.result.givenNames">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Apellidos</mat-label>
+        <input matInput [(ngModel)]="data.result.surname" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Nacionalidad</mat-label>
+        <input matInput  [(ngModel)]="data.result.nationality" >
+    </mat-form-field>
+
+
+
+    <!-- <mat-form-field appearance="fill"  class="col-lg-12">
+        <mat-label>Sexo:</mat-label>
+        <mat-select [(ngModel)]="data.result.sex" (selectionChange)="changeSelect()">
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="female">female</mat-option>
+        </mat-select>
+    </mat-form-field> -->
+
+    <div class="col-lg-12 mt-1" style="visibility:hidden !important;display: none;">
+        <img style="width: 100%!important;" src="" id="imagenFront">
+    </div> 
+
+    <div class="col-lg-12" style="visibility:hidden !important;display: none;">
+        <canvas   id="canvas" width="700px" height="600px"></canvas>
+    </div>
+
+
+
+    <div class="col-lg-12 mt-1">
+        <img style="width: 100%!important;" src="" id="imagenPrueba">
+    </div> 
+  
+
+    
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Departamento/Casa</mat-label>
+        <input matInput [(ngModel)]="data.result.noHouse" >
+    </mat-form-field>   
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Motivo de Visita/Observaciones</mat-label>
+        <textarea matInput  [(ngModel)]="data.result.observation"></textarea>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill" class="col-lg-12">
+        <mat-label>Tipo de Visita</mat-label>
+        <mat-select name="visitorType" id="visitorType" [(ngModel)]="data.result.visitorType">
+          <mat-option  value="Visita">Visita</mat-option>
+          <mat-option  value="Proveedor">Proveedor</mat-option>
+          <mat-option  value="Entrevista">Entrevista</mat-option>
+          <mat-option  value="Contratista">Contratista</mat-option>
+          <mat-option  value="Taxis">Taxis</mat-option>
+          <mat-option  value="Servicio a Domicilio">Servicio a Domicilio</mat-option>
+          <mat-option  value="Otros">Otros</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label># Teléfono</mat-label>
+        <input matInput type="number" [(ngModel)]="data.result.numberPhone" >
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Placa</mat-label>
+        <input matInput [(ngModel)]="data.result.plate" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Marca</mat-label>
+        <input matInput [(ngModel)]="data.result.brand" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill" class="col-lg-12">
+        <mat-label>Color</mat-label>
+        <input matInput [(ngModel)]="data.result.color" >
+    </mat-form-field>
+
+    <div class="w-100  d-flex justify-content-center">
+        <button mat-raised-button class="m-1" color="primary" (click)="validateFields()" cdkFocusInitial>ENTRY</button>
+        <button mat-raised-button class="m-1" color="primary" (click)="saveExit()">EXIT</button>
+        <button mat-raised-button class="m-1" color="primary" (click)="saveDocumentExit()">CANCEL</button>
+    </div>
+</mat-dialog-content>   

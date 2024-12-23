@@ -1,0 +1,6 @@
+{
+	"appId": "com.lektorgt",
+	"appName": "lektor-front",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
